@@ -33,16 +33,20 @@ client.on("ready", () => {
                         "name": "",
                         "url": "",
                         "icon_url": ""
-                    },
+                                      },
                     "fields": [{
                             "name": "Entrada",
-                            "value": "| Bem-vindo ao discord do **Shield**",
+                            "value": "| Bem-vindo ao discord do **Shield** qualquer coisa pode chamar!",
                             "inline": true
                         },
                         {
                             "name": "Quantidade atual de users",
-                            "value": `| Discord do OlympusRP: ${client.users.size -1} |`,
+                            "value": `| Discord do **SHIELD**: ${client.users.size -1} |`,
                             "inline": true
+                        }
+                    ]
+            }
+            })
                         }
                     ]
             }
@@ -83,6 +87,7 @@ embed = new Discord.RichEmbed()
 .setTimestamp(new Date())
 .addField('O comando utilizado foi', `**s!${command}**`)
 .addField('O autor do comando foi', `${message.author}`, true)
+.addField('O comando foi utilizado em', `${message.channel}`, true)
 client.guilds.get("427238449028792322").channels.get("440702344146190337").send(embed);
 try {
 let commandFile = require(`./comandos a/${command}.js`);
