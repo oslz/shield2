@@ -1,5 +1,3 @@
-
-
 const Discord = require(`discord.js`);
 const client = new Discord.Client();
 const prefix = ("!");
@@ -43,11 +41,9 @@ client.on("ready", () => {
                             "name": "Quantidade atual de users",
                             "value": `| Discord do **SHIELD**: ${client.users.size -1} |`,
                             "inline": true
+                        
                         }
-                    ]
-            }
-            })
-                        }
+                    
                     ]
             }
             })
@@ -172,7 +168,6 @@ client.on("message", async function(message) {
               "lothus",
               "rola",
               "buceta",
-              "LeooBaat",
               "twitter.com",
               "instagram.com",
               "youtube.com"
