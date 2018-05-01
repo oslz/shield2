@@ -7,7 +7,7 @@ exports.run = (client, message, args, command)  => {
         member.ban();
       const reason = args.slice(1).join(' ');
       if (reason < 1) return message.reply('Esta faltando argumentos');
-      member.guild.channels.find("name", "🔥punições").send({"embed": {
+      member.guild.channels.find("name", "punições").send({"embed": {
           "title": "Punição",
           "description": "",
           "url": "",

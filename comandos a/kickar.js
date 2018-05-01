@@ -4,10 +4,11 @@ exports.run = (client, message, args, command)  => {
     let member = message.mentions.members.first();
       if (message.author.bot) return message.reply("**Sem permissão =/**")
       if(message.guild.members.get(message.author.id).roles.find("name" , "STAFF")) {
-      member.kick();
       const reason = args.slice(1).join(' ');
+      if (member < 1) return message.reply('Está falando argumentos');
       if (reason < 1) return message.reply('Esta faltando argumentos');
-      member.guild.channels.find("name", "🔥punições").send({"embed": {
+      member.kick();
+      member.guild.channels.find("name", "punições").send({"embed": {
           "title": "Punição",
           "description": "",
           "url": "",
