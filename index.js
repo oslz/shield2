@@ -22,9 +22,9 @@ client.on("ready", () => {
                     "footer": {
                         "icon_url": "",
                         "text": ""
-                    },
-                    "thumbnail": {
-                        "url": ""
+          },
+          "thumbnail": {
+            "url": "https://cdn.discordapp.com/attachments/437667917228802048/438149080598970368/20180423_222806.jpg"
                     },
                     "image": {
                         "url": ""
