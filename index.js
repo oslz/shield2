@@ -38,11 +38,6 @@ client.on("ready", () => {
                             "name": "Entrada",
                             "value": "| Bem-vindo ao discord do **Shield**",
                             "inline": true
-                        },
-                        {
-                            "name": "Quantidade atual de users",
-                            "value": `| Discord do OlympusRP: ${client.users.size -1} |`,
-                            "inline": true
                         }
                     ]
             }
