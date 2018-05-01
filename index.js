@@ -22,9 +22,9 @@ client.on("ready", () => {
                     "footer": {
                         "icon_url": "",
                         "text": ""
-          },
-          "thumbnail": {
-            "url": "https://cdn.discordapp.com/attachments/437667917228802048/438149080598970368/20180423_222806.jpg"
+                    },
+                    "thumbnail": {
+                        "url": ""
                     },
                     "image": {
                         "url": ""
@@ -37,6 +37,11 @@ client.on("ready", () => {
                     "fields": [{
                             "name": "Entrada",
                             "value": "| Bem-vindo ao discord do **Shield**",
+                            "inline": true
+                        },
+                        {
+                            "name": "Quantidade atual de users",
+                            "value": `| Discord do OlympusRP: ${client.users.size -1} |`,
                             "inline": true
                         }
                     ]

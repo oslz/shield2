@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
     "discord.js": "^11.3.2",
     "fs.js": "0.0.1",
-    "gif-search": "^2.0.1"
+    "gif-search": "^2.0.1",
+    "pixel-util": "0.0.2"
   }
 }
