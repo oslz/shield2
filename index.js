@@ -1,3 +1,5 @@
+
+
 const Discord = require(`discord.js`);
 const client = new Discord.Client();
 const prefix = ("!");
@@ -31,19 +33,17 @@ client.on("ready", () => {
                         "name": "",
                         "url": "",
                         "icon_url": ""
-                                      },
+                    },
                     "fields": [{
                             "name": "Entrada",
-                            "value": "| Bem-vindo ao discord do **Shield** qualquer coisa pode chamar!",
+                            "value": "| Bem-vindo ao discord do **Shield**",
                             "inline": true
                         },
                         {
                             "name": "Quantidade atual de users",
-                            "value": `| Discord do **SHIELD**: ${client.users.size -1} |`,
+                            "value": `| Discord do OlympusRP: ${client.users.size -1} |`,
                             "inline": true
-                        
                         }
-                    
                     ]
             }
             })
@@ -76,6 +76,7 @@ if (!message.content.startsWith(prefixa)) return;
 let command = message.content.split(" ")[0];
 command = command.slice(prefixa.length);
 let args = message.content.split(" ").slice(1);
+if (message.guild.members.get(message.author.id).roles.find("name", "STAFF")) { return;
 message.delete();
 embed = new Discord.RichEmbed()
 .setTitle(`💫 ${message.guild.name} 💫`)
@@ -91,6 +92,7 @@ commandFile.run(client, message, args);
 
 } catch (err) {
     console.error("[CONSOLE] " + err);
+}
 }
 })
 client.on("message", async function(message) {
