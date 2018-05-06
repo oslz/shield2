@@ -170,10 +170,7 @@ client.on("message", async function(message) {
               "lothus",
               "rola",
               "buceta",
-              "LeooBaat",
-              "twitter.com",
-              "instagram.com",
-              "youtube.com"
+              "LeooBaat"
           ];
                       
           for (var i = 0; i < forbidenWords.length; i++) {
